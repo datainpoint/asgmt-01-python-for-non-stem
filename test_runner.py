@@ -16,7 +16,7 @@ class TestAssignmentOne(unittest.TestCase):
         self.assertEqual(answer_05, "Hello, world!")
 
 chapter_name = "簡介"
-answers = importlib.import_module("suggested_answers")
+answers = importlib.import_module("answers")
 suite = unittest.TestLoader().loadTestsFromTestCase(TestAssignmentOne)
 runner = unittest.TextTestRunner(verbosity=2)
 test_results = runner.run(suite)
